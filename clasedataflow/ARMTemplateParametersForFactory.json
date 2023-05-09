@@ -4,12 +4,6 @@
 	"parameters": {
 		"factoryName": {
 			"value": "clasedataflow"
-		},
-		"StorageFormacion_accountKey": {
-			"value": ""
-		},
-		"StorageFormacion_properties_typeProperties_url": {
-			"value": "https://datalakeformacion2.dfs.core.windows.net/"
 		}
 	}
 }
