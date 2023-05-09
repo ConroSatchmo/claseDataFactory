@@ -1,0 +1,22 @@
+{
+	"name": "Movies",
+	"properties": {
+		"folder": {
+			"name": "FlowMovies"
+		},
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"name": "SourceMovies"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"scriptLines": [
+				"source(allowSchemaDrift: true,",
+				"     validateSchema: false) ~> SourceMovies"
+			]
+		}
+	}
+}
