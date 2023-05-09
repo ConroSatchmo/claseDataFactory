@@ -1,0 +1,37 @@
+{
+	"name": "SalidaMovies",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "StorageFormacion",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Movies"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "movies.csv",
+				"folderPath": "Trusted/Movies/",
+				"fileSystem": "clasedf"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			},
+			{
+				"type": "String"
+			}
+		]
+	}
+}
