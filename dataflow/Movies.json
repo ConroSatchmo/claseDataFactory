@@ -17,10 +17,6 @@
 			],
 			"sinks": [
 				{
-					"dataset": {
-						"referenceName": "SalidaMovies",
-						"type": "DatasetReference"
-					},
 					"name": "sinkMovies"
 				}
 			],
@@ -42,14 +38,6 @@
 				"          title = toString(left(title, length(title)-6))) ~> ExtractYear",
 				"ExtractYear sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
-				"     input(",
-				"          Column_1 as string,",
-				"          Column_2 as string,",
-				"          Column_3 as string",
-				"     ),",
-				"     umask: 0022,",
-				"     preCommands: [],",
-				"     postCommands: [],",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> sinkMovies"
 			]
